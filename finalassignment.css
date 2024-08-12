@@ -1,0 +1,168 @@
+
+body{
+    margin: 0px;
+    background-color: #F5F5F7;
+}
+.list{
+  margin: 0px 0px;
+    list-style-type: none;
+    display: flex;
+    color: #1C1C1D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    gap: 30px;
+    /* font-family: "San Francisco",sans-serif;
+    font-size: large ;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); */
+
+}
+#listing{
+   font-family: "San Francisco",sans-serif;
+    font-size: smaller ;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+
+}
+.navbar{
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+  /* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F5F5F7;
+    
+  } */
+  li {
+    float: left;
+    font-size: small;
+  }
+  .mid{
+    margin-left: 20px;
+  }
+  
+h1{
+  font-family: "San Francisco",sans-serif;
+  font-weight:600 ;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+
+}
+.cc{
+    color:#6E6E73 ;
+}
+/* .mid{
+    padding-left: 150px;
+    overflow: visible;
+} */
+
+#pic
+{
+  height: 20px;
+
+}
+.item{
+  
+  display: flex;
+  flex-direction:column ;
+}
+#dvname{
+  font-family: "San Francisco",sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  color: #1C1C1D;
+}
+#idk{
+  font-size:  1.5em;
+  height: 200px;
+  width: 700px;
+  margin-top: 60px;
+}
+#idc{
+  margin-top: 70px;
+}
+#dead{
+  
+  height: 500px;
+  width: 400px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px  #EDEDEF;
+ 
+}
+.owl-carousel .owl-item img{
+  width: 130px;
+}
+
+#uptext{
+  margin: 0px;
+ position: relative;
+  color: white; 
+  font-family: "San Francisco",sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+#mvtext{
+  margin: 0px;
+  position: relative;
+  color: white; 
+  font-family: "San Francisco",sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#btext{
+  margin: 0px;
+ position: relative;
+  color: white; 
+  font-family: "San Francisco",sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.phototext{
+  position:absolute ;
+  margin-top: 30px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+/* for white cards */
+#uptextw{
+  margin: 0px;
+ position: relative;
+  color: #1D1D1F; 
+  font-family: "San Francisco",sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+#mvtextw{
+  margin: 0px;
+  position: relative;
+  color: #1D1D1F; 
+  font-family: "San Francisco",sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#btextw{
+  margin: 0px;
+ position: relative;
+  color: #1D1D1F; 
+  font-family: "San Francisco",sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* .owl-carouselpc{
+ margin-left: 0px;
+} */
+ container{
+  max-width: 100px;
+  margin: 0 auto;
+  padding: 0 20px;
+ }

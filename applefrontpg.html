@@ -150,41 +150,43 @@
        </div>
     </div>
     <container>
-      <div class="owl-carousel owl-theme">
-          <div class="item"> <img src="1.png" height="85px" ><h4 id="dvname">Mac</h4></div>
-          <div class="item"><img src="2.png" height="85px" ><h4 id="dvname">iPhone</h4></div>
-          <div class="item"><img src="3.png" height="85px" ><h4 id="dvname">iPhone</h4></div>
-          <div class="item"><img src="4.png" height="85px" ><h4 id="dvname">Apple Watch</h4></div>
-          <div class="item"><img src="5.png" height="85px" ><h4 id="dvname">Apple Vision Pro</h4></div>
-          <div class="item"><img src="6.png" height="85px" ><h4 id="dvname">AirPods</h4></div>
-          <div class="item"><img src="7.png" height="85px" ><h4 id="dvname">AirTag</h4></div>
-          <div class="item"><img src="8.png"height="85px" ><h4 id="dvname">Apple TV 4K</h4></div>
-          <div class="item"><img src="9.png" height="85px" ><h4 id="dvname">HomePod</h4></div>
-          <div class="item"><img src="10.png" height="85px" ><h4 id="dvname">Accessories</h4></div>
-          <div class="item"><img src="11.png" height="85px" ><h4 id="dvname">Apple Gift Card</h4></div>
+      <div class="  owl-carousel  ">
+          <div class="items"> <img src="bm.jpg"  ></div>
+          <div class="items"><img src="ct.jpg"  ></div>
+          <div class="items"><img src="1250x703.jpg"  ></div>
+          <div class="items"><img src="ti.jpg"  ></div>
+         
          
       </div>
   </container>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
       <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"> </script>
       <script>
-      $('.owl-carousel').owlCarousel({
-      dots: false,
-      loop:false,
-      margin:1,
-      nav:false,
-      responsive:{
-      0:{
-          items:1
-      },
+        var owl = $('.owl-carousel');
+owl.owlCarousel({
+    loop:true,
+    center: true, 
+    items:1,
+    margin:10,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+    responsive:{
       600:{
-          items:3
-      },
-      1000:{
-          items:9
-      }
-       }
-      })
+            items:2
+        } 
+        
+    }
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[2000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+
 
   </script> 
 </body>

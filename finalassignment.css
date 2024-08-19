@@ -27,6 +27,7 @@ body{
   margin: 0px;
   display: flex;
   justify-content: center;
+  top: 0px;
 }
 
   /* ul {
@@ -40,9 +41,6 @@ body{
   li {
     float: left;
     font-size: small;
-  }
-  .mid{
-    margin-left: 20px;
   }
   
 h1{
@@ -81,9 +79,11 @@ h1{
   height: 200px;
   width: 700px;
   margin-top: 60px;
+  padding-left: 150px;
 }
 #idc{
   margin-top: 70px;
+  padding-left: 150px;
 }
 #dead{
   
@@ -94,9 +94,29 @@ h1{
   box-shadow: 10px 10px 10px 10px  #EDEDEF;
  
 }
-.owl-carousel .owl-item img{
-  width: 130px;
+/* .owl-carousel owl-theme{
+
+} */
+ :root{
+  --container-size:1000px;
+ }
+
+.owl-carouselpc {
+  overflow: visible;
+  /* position: relative; */
+  /* display: flex;
+  flex-direction: column;
+  height: 100%; */
+  transform: translateX(calc(max(var(--container-size),100vw)/2 - calc(var(--container-size)/2))) ; 
 }
+.owl-carouselpc .owl-stage:after{
+
+  padding: 0;
+  margin: 0;
+  width:100%;
+}
+
+
 
 #uptext{
   margin: 0px;
@@ -162,7 +182,37 @@ h1{
  margin-left: 0px;
 } */
  container{
-  max-width: 100px;
-  margin: 0 auto;
-  padding: 0 20px;
+  /* padding-left: 150px; */
+  
+  overflow: scroll;
  }
+.phototext2{
+  position:absolute ;
+  margin-top: 30px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+#seccarousel{
+  width: 480px;
+  height: 500px;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px  #EDEDEF;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  gap: 10px;
+}
+#seccarouselcol{
+  height: 240px;
+  width: 480px ;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px  #EDEDEF;
+}
+.owl-carousel .owl-stage:after{
+  height: 50px;
+}

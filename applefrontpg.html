@@ -169,7 +169,8 @@ owl.owlCarousel({
     center: true, 
     items:1,
     margin:10,
-    
+    dots: true,
+    dotsEach: true,
     autoplay:true,
     autoplayTimeout:2500,
     autoplayHoverPause:true,
@@ -186,6 +187,7 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
+// sec carousel
   </script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="OwlCarousel2-2.3.4\dist\owl.carousel.min.js"> </script>
@@ -193,10 +195,10 @@ $('.stop').on('click',function(){
       <div class="owl_item2"> <img src="ex.jpg"  ></div>
       <div class="owl_item2"><img src="hk.jpg"  ></div>
       <div class="owl_item2"><img src="nba.jpg"  ></div>
-      <div class=" w-[370px] h-[210px] bg-slate-50 object-contain flex justify-center grid content-center">
+      <div class=" w-[370px] h-[210px] bg-[#e8e1d5] object-contain flex justify-center grid content-center">
         <div class=" object-scale-down h-40 w-40"><img class="border rounded-lg " src="pm.jpg"  ></div>
       </div>
-      <div class=" w-[370px] h-[210px] bg-slate-50 object-contain flex justify-center grid content-center ">
+      <div class=" w-[370px] h-[210px] bg-[#0C0E34] object-contain flex justify-center grid content-center ">
         <div class=" object-scale-down h-40 w-40  "><img class="border rounded-lg " src="rab.jpg"  ></div>
       </div>
       <div class="owl_item2"><img src="yoga.jpg"  ></div>
@@ -210,11 +212,12 @@ owl.owlCarousel({
     loop:true,
     margin:10,
     autoplay:true,
-    autoplayTimeout:500,
+    autoplayTimeout: 3000,
+    smartSpeed: 4000, 
     autoplayHoverPause:true
 });
 $('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[500])
+    owl.trigger('play.owl.autoplay',[3000])
 })
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
@@ -263,43 +266,150 @@ $('.stop').on('click',function(){
 <br>
 <hr>
 <br>
-<div class="flex flex-row gap-8">
-  <ul>
-    <li><b>Shop and Learn</b></li>
-      <li>Store</li>
-      <li>Mac</li>
-      <li>iPad</li>
-      <li>iPhone</li>
-      <li>Watch</li> 
-      <li>Vision</li>
-      <li>AirPods</li>
-      <li>TV & Home</li>
-      <li>AirTag</li>
-      <li>Accessories</li>
-      <li>Gift Cards</li>
-  </ul><br>
-  <!-- 2-->
-  
-  <ul>
-    <li><b>Apple Wallet</b></li>
-      <li> Wallet</li>
-      <li>Apple Card</li>
-      <li>Apple Pay</li>
-      <li>Apple Cash</li>
-  </ul>
+
+<!--FOOTER-->
+<div class="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-2">
+  <div >
+       <section class="pb-4">
+       <b class="text-[#1E1E1E] ">Shop and learn</b>
+      <ul class="flex flex-col space-y-2 mt-2 ">
+          <li>Store</li>
+          <li>Mac</li>
+          <li>iPhone</li>
+          <li>iPad</li>
+          <li>Watch</li>
+          <li>Vision</li>
+          <li>Airpods</li>
+          <li>TV & Home</li>
+          <li>Entertainment</li>
+          <li>Accessories</li>
+          <li>Support</li>
+      </ul>
+      </section>
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">Apple Wallet</b>
+         <ul class="flex flex-col space-y-2 mt-2 ">
+             <li>Wallet</li>
+             <li>Apple Card</li>
+             <li>Apple Pay</li>
+             <li>Apple Cash</li>
+         </ul>
+         </section>
+  </div>
+  <div >
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">Account</b>
+      <ul class="flex flex-col space-y-2 mt-2 ">
+          <li>Manage Your Apple ID</li>
+          <li>Apple Store Account</li>
+          <li>iCloud.com</li>
+      </ul>
+      </section>
+
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">Entertainment</b>
+         <ul class="flex flex-col space-y-2 mt-2 ">
+             <li>Apple One</li>
+             <li>Apple TV+</li>
+             <li>Apple Music</li>
+             <li>Apple Arcade</li>
+             <li>Apple Fitness+</li>
+             <li>Apple News+</li>
+             <li>Apple Podcasts</li>
+             <li>Apple Books</li>
+             <li>Apple Store</li>
+         </ul>
+      </section>
+  </div>
+
+  <div >
+      <section class="pb-4">
+          <b  class="text-[#1E1E1E] ">Apple Store</b>
+      <ul class="flex flex-col space-y-2 mt-2 ">
+          <li>Find a Store</li>
+          <li>Genius Bar</li>
+          <li>Today at Apple</li>
+          <li>Group Reservations</li>
+          <li>Apple Camp</li>
+          <li>Apple Store App</li>
+          <li>Certified Refurbished</li>
+          <li>Apple Trade In</li>
+          <li>Financing</li>
+          <li>Carrier Deals at Apple</li>
+          <li>Order Status</li>
+          <li>Shopping Help</li>
+      </ul>
+      </section>
+  </div>
+
+  <div >
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">For Business</b>
+      <ul class="flex flex-col space-y-2 mt-2 ">
+          <li>Apple and Business</li>
+          <li>Shop for Business</li>
+      </ul>
+      </section>
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">For Education</b>
+         <ul class="flex flex-col space-y-2 mt-2 ">
+             <li>Apple and Education</li>
+             <li>Shop for K-12</li>
+             <li>Shop for College</li>
+         </ul>
+      </section>
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">For Healthcare</b>
+         <ul class="flex flex-col space-y-2 mt-2 ">
+             <li>Apple in Healthcare</li>
+             <li>Mac in Healthcare</li>
+             <li>Health on Apple Watch</li>
+             <li>Health Records on iPhone and iPad</li>
+         </ul>
+      </section>
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">For Government</b>
+         <ul class="flex flex-col space-y-2 mt-2 ">
+             <li>Shop for Government</li>
+             <li>Shop for Veterans and Military</li>
+         </ul>
+      </section>
+  </div>
+
+  <div >
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">Apple Values</b>
+      <ul class="flex flex-col space-y-2 mt-2">
+          <li>Accessibility</li>
+          <li>Education</li>
+          <li>Environment</li>
+          <li>Inclusion and Diversity</li>
+          <li>Privacy</li>
+          <li>Racial Equity and Justice</li>
+          <li>Supply Chain</li>
+      </ul>
+      </section>
+      <section class="pb-4">
+          <b class="text-[#1E1E1E] ">About Apple</b>
+      <ul class="flex flex-col space-y-2 mt-2">
+          <li>Newsroom</li>
+          <li>Apple Leadership</li>
+          <li>Career Opportunities</li>
+          <li>Investors</li>
+          <li>Ethics and Compliance</li>
+          <li>Events</li>
+          <li>Contact Apple</li>
+      </ul>
+      </section>
+  </div>
 </div>
-<div>
-<!-- 3 -->
-<ul>
-  <li><b>Account</b></li>
-    <li> Manage Your Apple ID
-      </li>
-    <li>Apple Store Account
-      </li>
-    <li>iCloud.com</li>
-</ul> 
-  
+<div class="copy">
+<p>More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.</p><br>
+<hr ><br>
+<p>Copyright © 2024 Apple Inc. All rights reserved.</p>
 </div>
+</div>
+
 </footer>
 </body>
 </html>
